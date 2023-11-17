@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+<title>program7</title>
+<body bgcolor="lightgreen">
+<h1 align="center">VALIDATION FORM</h1>
+<form>
+<table border="0" align="center">
+<tr>
+<tr>
+<th><label for="Name">Name</label></th><td>:</td>
+<td><input type="text" name="name" </td>
+</tr>
+<tr></tr>
+
+<tr>
+<th><label for="email">Email</label></th><td>:</td>
+<td><input type="email" name="email"</td>
+</tr>
+<tr></tr>
+
+<tr>
+<th><label for="Telephone">Mobile Number</label></th><td>:</td>
+<td><input type="tel" pattern="[0-9]{4}-[0-9]{2}-[0-9]{4}" name="mobile"></td>
+</tr>
+<tr></tr>
+
+<tr>
+<th><label for="Username">User Name</label></th><td>:</td>
+<td><input type="text" name="user"</td>
+</tr>
+<tr></tr>
+
+
+<tr>
+<th><label for="Password">Password</label></th><td>:</td>
+<td><input type="password" name="passwordvar "</td>
+</tr>
+<tr></tr>
+
+<tr>
+<td><input type="submit" value="submit">
+<input type="reset" value="reset">
+</td>
+</tr>
+<script>
+function Validate_form()
+var name=document.form.name.value
+var email=document.form.email.value
+var mobile=document.form.mobile.value
+var user=document.form.user.value
+var password=document.form.password.value
+var re=
+
+if(name=="")
+alert("Enter name")
+document.form.name.focus();
+</script>
+</body>
+</html>
